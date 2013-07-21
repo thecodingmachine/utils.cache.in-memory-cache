@@ -34,7 +34,7 @@ class InMemoryCache implements CacheInterface {
 		if (isset($this->cache[$key])) {
 			return $this->cache[$key];
 		} elseif ($this->chainWith != null) {
-			$item = $this->chainWith->get($this->chainWith);
+			$item = $this->chainWith->get($key);
 			if ($item !== null) {
 				$this->cache[$key] = $item;
 				return $item;
