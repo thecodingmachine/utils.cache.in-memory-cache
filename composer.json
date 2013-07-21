@@ -1,0 +1,24 @@
+{
+    "name": "mouf/utils.cache.in-memory-cache",
+    "description": "This package contains the most basic cache mechanism. It stores cache items in an array. It means the cache is flushed as soon as the script returns. It is very basic, but also very fast. You will usually use this mechanism with another one just behind.",
+    "keywords": ["mouf", "cache", "in-memory"],
+    "homepage": "https://mouf-php/packages/mouf/utils.cache.local-cache",
+    "type": "mouf-library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Négrier",
+            "email": "d.negrier@thecodingmachine.com",
+            "homepage": "http://mouf-php.com"
+        }
+    ],
+    "require": {
+    	"php": ">=5.3.0",
+    	"mouf/utils.cache.cache-interface": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mouf": "src/"
+        }
+    }
+}
