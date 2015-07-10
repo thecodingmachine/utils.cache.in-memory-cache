@@ -67,7 +67,7 @@ class InMemoryCache implements CacheInterface {
 	 */
 	public function purge($key) {
 		if (isset($this->cache[$key])) {
-			return $this->cache[$key];
+			unset($this->cache[$key]);
 		}
 		if ($this->chainWith != null) {
 			$this->chainWith->purge($key);
